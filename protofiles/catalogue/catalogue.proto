@@ -1,0 +1,43 @@
+syntax = "proto3";
+package catalogue;
+
+import "catalogue/shared.proto";
+
+option go_package = "catalogue/catalogue";
+
+service CatalogueService {
+  rpc Create(CreateRequest) returns (CreateResponse) {}
+  rpc Update(UpdateRequest) returns (UpdateResponse) {}
+  rpc UpdatePrice(UpdatePriceRequest) returns (UpdatePriceResponse) {}
+}
+
+message CreateRequest {
+  ProductInfo product = 1;
+  BooksInfo books_info = 2;
+  LifeStyleInfo life_style_info = 3;
+}
+
+message CreateResponse {
+  string id = 1;
+}
+
+message UpdateRequest {
+  string id = 1;
+  ProductInfo product = 2;
+  BooksInfo books_info = 3;
+  LifeStyleInfo life_style_info = 4;
+}
+
+message UpdateResponse {
+  string message = 1;
+}
+
+message UpdatePriceRequest {
+  string id = 1;
+  string provider = 2;
+  Price price = 3;
+}
+
+message UpdatePriceResponse {
+  string message = 1;
+}

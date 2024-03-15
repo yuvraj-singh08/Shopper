@@ -1,0 +1,235 @@
+body{
+    background-color: rgb(243, 243, 243);
+}
+
+.addAddressButton {
+    width: 400px;
+    border: 2px solid var(--bg-color);
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.addAddressButton:hover {
+    background-color: var(--bg-color);
+    color: white;
+}
+
+.add-white {
+    display: none;
+}
+
+.addAddressButton:hover .add-custom {
+    display: none;
+}
+
+.addAddressButton:hover .add-white {
+    display: block;
+}
+
+.addAddressForm {
+    background-color: #eef4f8;
+    width: 80%;
+    margin: 40px 15px;
+    padding: 20px;
+}
+
+.form-control {
+    width: 280px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 4px 6px;
+}
+
+.form-text-area {
+    margin-left: 12px;
+    margin-bottom: 12px;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 4px 6px;
+    resize: none;
+    /* Allows vertical resizing */
+    font-family: Arial, sans-serif;
+    /* Example font family */
+    font-size: 14px;
+    /* Example font size */
+    line-height: 1.5;
+    /* Example line height */
+}
+
+.desc {
+    width: 200px;
+    font-size: 15px;
+}
+
+.personal-form {
+    margin: 0px 10px;
+    padding: 0px 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 34px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.personal-container {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.btn {
+    margin-right: 10px;
+    padding: 5px 12px;
+    border: 2px solid;
+    border-radius: 10px;
+    transition: 20ms;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: aliceblue;
+    background-color: var(--bg-color);
+    border-color: var(--bg-color);
+}
+
+.btn-secondar {
+    background-color: aliceblue !important;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary:active {
+    background-color: var(--bg-color-dark);
+}
+
+.link-edit {
+    color: var(--bg-color);
+    text-decoration: underline;
+}
+
+.link-edit:hover {
+    color: var(--bg-color-light);
+}
+
+.link-edit:active {
+    color: var(--bg-color-dark);
+}
+
+.group-heading {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.address-group {
+    margin-left: 12px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+/* address Form  */
+
+.address-form {
+    max-width: 600px;
+    margin: 0 0;
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.form-buttons {
+    text-align: center;
+}
+
+.nav-heading {
+    font-size: 34px;
+    margin-bottom: 24px;
+}
+
+.nav-list-item {
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-list-active {
+    background-color: #274256;
+}
+
+.profile-container{
+    background-color: rgb(255, 255, 255);
+    height: calc(100vh - 63px);
+    max-width: 2300px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.profile-container-main{
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    /* height: 100vh; */
+    overflow-y: scroll;
+    width: 1300px;
+}
+
+.nav-container{
+    color: white;
+    background-color: rgb(31, 41, 55);
+    padding: 45px;
+    width: 450px;
+}
+
+.text-semibold{
+    font-weight: 600;
+}
+
+.address{
+    border: 2px solid rgb(50, 62, 90);
+    padding: 10px 20px;
+}

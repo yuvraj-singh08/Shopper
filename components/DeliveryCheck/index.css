@@ -1,0 +1,17 @@
+.pincode-input:focus {
+    outline: none !important;
+}
+
+.pincode-input::-webkit-outer-spin-button,
+.pincode-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pincode-container {
+    border-bottom: 2px solid rgb(37 99 235);
+}
+
+.pincode-container-focus {
+    border-bottom: 2px solid rgb(37 99 235);
+}

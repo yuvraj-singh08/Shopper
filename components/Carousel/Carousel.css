@@ -1,0 +1,34 @@
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 371px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 365px;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the image covers the entire container */
+}
+
+
+.carousel-button {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 5px;
+}
