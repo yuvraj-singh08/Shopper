@@ -30,6 +30,7 @@ import { RegisterUserRequest } from '@/grpc_interfaces/user/auth_pb';
 
 const __dirname = fileURLToPath(import.meta.url).split('/').slice(0, -1).join('/');
 const AUTH_PROTO_PATH = join(__dirname, '../protofiles/user/auth.proto');
+console.log(AUTH_PROTO_PATH);
 const packageDefinition = protoLoader.loadSync(AUTH_PROTO_PATH, {
     keepCase: true,
     longs: String,

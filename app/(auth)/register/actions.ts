@@ -20,7 +20,7 @@ interface Request {
     email: string | null;
     phone: {
         countryCode: number;
-        number: string;
+        number: number;
     } | null;
 }
 
@@ -41,22 +41,25 @@ export async function RegisterUser(data: RegisterData) {
 
     const request: Request = {
         username: data.username,
-        email: null,
-        phone: null,
+        email: data.contact,
+        phone: {
+            countryCode: 91,
+            number: 1234567891
+        },
         password: data.password,
     }
 
-    if (isEmail(data.contact)) {
-        request.email = data.contact;
-    }
-    else {
-        console.log("Phone");
-        request.phone = {
-            countryCode: 91,
-            number: data.contact
-        }
+    // if (isEmail(data.contact)) {
+    //     request.email = data.contact;
+    // }
+    // else {
+    //     console.log("Phone");
+    //     request.phone = {
+    //         countryCode: 91,
+    //         number: data.contact
+    //     }
 
-    }
+    // }
 
     // const request: RegisterUserRequest = {
     //     username: data.username,
@@ -76,6 +79,7 @@ export async function RegisterUser(data: RegisterData) {
                 console.error(err);
                 reject(err);
             } else {
+                console.log(response);
                 resolve(response);
             }
         });

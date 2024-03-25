@@ -50,9 +50,9 @@ export default function Header() {
                     <a href='/'>G-Shopper</a>
                 </div>
 
-                <div className="ml-11 text-xl">
+                {/* <div className="ml-11 text-xl">
                     <button onClick={handleLogout} >Logout</button>
-                </div>
+                </div> */}
 
                 <div className="flex-1 max-w-3xl">
                     <Search />

@@ -15,6 +15,7 @@ export async function Login(data: Data) {
         phone: null,
         email: data.email,
     };
+    console.log(request);
 
 
     return new Promise<any>((resolve, reject) => {
@@ -23,6 +24,7 @@ export async function Login(data: Data) {
                 console.error(err);
                 reject(err);
             } else {
+                console.log(response);
                 resolve(response);
             }
         });
